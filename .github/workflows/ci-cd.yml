@@ -8,6 +8,9 @@ on:
     branches:
       - master          # PR 到 master 時也觸發（跑測試）
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   # ─── Job 1: CI - Build & Test ───────────────────
   ci:
